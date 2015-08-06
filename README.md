@@ -1,6 +1,6 @@
 # reelyActive's Angular.js Guide
 
-This is a live example of the best practices, coding standards and tools for all our web development using AngularJS, HTML and CSS.
+[This is a live example](http://reelyactive.github.io/angular-style-guide/) of the best practices, coding standards and tools for all our web development using AngularJS, HTML and CSS.
 
 
 License
