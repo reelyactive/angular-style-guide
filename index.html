@@ -57,6 +57,39 @@
         </div>
       </div>
 
+      <div class="row">
+        <div class="col-md-5"></div>
+        <div class="col-md-2"><hr></div>
+        <div class="col-md-5"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 text-center">
+          <button class="btn btn-default" ng-click="isHtmlCollapsed = !isHtmlCollapsed">The HTML</button>
+          <div collapse="isHtmlCollapsed">
+            <div class="well well-sm">
+              <a href="https://github.com/reelyactive/angular-style-guide/blob/gh-pages/index.html">index.html</a> on GitHub
+            </div> 
+	  </div>
+        </div>
+        <div class="col-md-4 text-center">
+          <button class="btn btn-default" ng-click="isCssCollapsed = !isCssCollapsed">The CSS</button>
+          <div collapse="isCssCollapsed">
+            <div class="well well-sm">
+              <a href="https://github.com/reelyactive/angular-style-guide/blob/gh-pages/style/main.css">style/main.css</a> on GitHub
+            </div> 
+	  </div>
+        </div>
+        <div class="col-md-4 text-center">
+          <button class="btn btn-default" ng-click="isJsCollapsed = !isJsCollapsed">The JS</button>
+          <div collapse="isJsCollapsed">
+            <div class="well well-sm">
+              <a href="https://github.com/reelyactive/angular-style-guide/blob/gh-pages/js/template.js">js/template.js</a> on GitHub
+            </div> 
+	  </div>
+        </div>
+      </div>
+
       <footer class="footer">
         <a href="https://github.com/reelyactive/projectname"> [project name] </a>
         &nbsp; | &nbsp;
