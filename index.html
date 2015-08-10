@@ -47,49 +47,59 @@
           </ul>
         </div>
       </nav>
-
+      <tabset class="row">
+        <tab heading="HTML">
+          <div class="col-md-4"></div>
+          <div class="col-md-4 text-center">
+            <p> &nbsp; </p>
+            <button class="btn btn-success" ng-click="isHtmlCollapsed = !isHtmlCollapsed">The HTML</button>
+            <div collapse="isHtmlCollapsed">
+              <div class="well well-sm">
+                <h3> View <a href="https://github.com/reelyactive/angular-style-guide/blob/gh-pages/index.html">index.html</a> on GitHub </h3>
+              </div> 
+	    </div>
+          </div>
+          <div class="col-md-4"></div>
+        </tab>
+        <tab heading="CSS">
+          <div class="col-md-4"></div>
+          <div class="col-md-4 text-center">
+            <p> &nbsp; </p>
+            <button class="btn btn-success" ng-click="isCssCollapsed = !isCssCollapsed">The CSS</button>
+            <div collapse="isCssCollapsed">
+              <div class="well well-sm">
+                <h3> View <a href="https://github.com/reelyactive/angular-style-guide/blob/gh-pages/style/main.css">style/main.css</a> on GitHub </h3>
+              </div> 
+	    </div>
+          </div>
+          <div class="col-md-4"></div>
+        </tab>
+        <tab heading="JS">
+          <div class="col-md-4"></div>
+          <div class="col-md-4 text-center">
+            <p> &nbsp; </p>
+            <button class="btn btn-success" ng-click="isJsCollapsed = !isJsCollapsed">The JS</button>
+            <div collapse="isJsCollapsed">
+              <div class="well well-sm">
+                <h3> View <a href="https://github.com/reelyactive/angular-style-guide/blob/gh-pages/js/template.js">js/template.js</a> on GitHub </h3>
+              </div> 
+	    </div>
+          </div>
+          <div class="col-md-4"></div>
+        </tab>
+      </tabset>
+      <hr>
       <div class="row">
         <div class="col-md-6 col-xs-12 text-center">
-          <a href="https://angular-ui.github.io/bootstrap/">Angular Bootstrap UI</a> has lovely interactive elements...
+          <h4> <a href="https://angular-ui.github.io/bootstrap/">Angular Bootstrap UI</a> has lovely interactive elements... </h4>
         </div>
         <div class="col-md-6 col-xs-12 text-center">
-          ...and they complement the mobile-first <a href="http://getbootstrap.com/css/">Bootstrap CSS</a> so elegantly.
+          <h4> ...and they complement the mobile-first <a href="http://getbootstrap.com/css/">Bootstrap CSS</a> so elegantly. </h4>
         </div>
       </div>
-
-      <div class="row">
-        <div class="col-md-5"></div>
-        <div class="col-md-2"><hr></div>
-        <div class="col-md-5"></div>
+      <div class="row text-center">
+        <h1> Read our <a href="https://github.com/reelyactive/angular-style-guide">angular-style-guide</a> on GitHub </h1>
       </div>
-
-      <div class="row">
-        <div class="col-md-4 text-center">
-          <button class="btn btn-default" ng-click="isHtmlCollapsed = !isHtmlCollapsed">The HTML</button>
-          <div collapse="isHtmlCollapsed">
-            <div class="well well-sm">
-              <a href="https://github.com/reelyactive/angular-style-guide/blob/gh-pages/index.html">index.html</a> on GitHub
-            </div> 
-	  </div>
-        </div>
-        <div class="col-md-4 text-center">
-          <button class="btn btn-default" ng-click="isCssCollapsed = !isCssCollapsed">The CSS</button>
-          <div collapse="isCssCollapsed">
-            <div class="well well-sm">
-              <a href="https://github.com/reelyactive/angular-style-guide/blob/gh-pages/style/main.css">style/main.css</a> on GitHub
-            </div> 
-	  </div>
-        </div>
-        <div class="col-md-4 text-center">
-          <button class="btn btn-default" ng-click="isJsCollapsed = !isJsCollapsed">The JS</button>
-          <div collapse="isJsCollapsed">
-            <div class="well well-sm">
-              <a href="https://github.com/reelyactive/angular-style-guide/blob/gh-pages/js/template.js">js/template.js</a> on GitHub
-            </div> 
-	  </div>
-        </div>
-      </div>
-
       <footer class="footer">
         <a href="https://github.com/reelyactive/projectname"> [project name] </a>
         &nbsp; | &nbsp;
