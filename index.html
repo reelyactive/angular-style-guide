@@ -48,58 +48,60 @@
           </ul>
         </div>
       </nav>
-      <tabset class="row">
-        <tab heading="HTML">
-          <div class="col-md-4"></div>
-          <div class="col-md-4 text-center">
-            <p> &nbsp; </p>
-            <button class="btn btn-success" ng-click="isHtmlCollapsed = !isHtmlCollapsed">The HTML</button>
-            <div collapse="isHtmlCollapsed">
-              <div class="well well-sm">
-                <h3> View <a href="https://github.com/reelyactive/angular-style-guide/blob/gh-pages/index.html">index.html</a> on GitHub </h3>
-              </div> 
-	    </div>
+      <div class="container-fluid">
+        <tabset class="row">
+          <tab heading="HTML">
+            <div class="col-md-4"></div>
+            <div class="col-md-4 text-center">
+              <p> &nbsp; </p>
+              <button class="btn btn-success" ng-click="isHtmlCollapsed = !isHtmlCollapsed">The HTML</button>
+              <div collapse="isHtmlCollapsed">
+                <div class="well well-sm">
+                  <h3> View <a href="https://github.com/reelyactive/angular-style-guide/blob/gh-pages/index.html">index.html</a> on GitHub </h3>
+                </div> 
+	            </div>
+            </div>
+            <div class="col-md-4"></div>
+          </tab>
+          <tab heading="CSS">
+            <div class="col-md-4"></div>
+            <div class="col-md-4 text-center">
+              <p> &nbsp; </p>
+              <button class="btn btn-success" ng-click="isCssCollapsed = !isCssCollapsed">The CSS</button>
+              <div collapse="isCssCollapsed">
+                <div class="well well-sm">
+                  <h3> View <a href="https://github.com/reelyactive/angular-style-guide/blob/gh-pages/style/main.css">style/main.css</a> on GitHub </h3>
+                </div> 
+	            </div>
+            </div>
+            <div class="col-md-4"></div>
+          </tab>
+          <tab heading="JS">
+            <div class="col-md-4"></div>
+            <div class="col-md-4 text-center">
+              <p> &nbsp; </p>
+              <button class="btn btn-success" ng-click="isJsCollapsed = !isJsCollapsed">The JS</button>
+              <div collapse="isJsCollapsed">
+                <div class="well well-sm">
+                  <h3> View <a href="https://github.com/reelyactive/angular-style-guide/blob/gh-pages/js/template.js">js/template.js</a> on GitHub </h3>
+                </div> 
+	            </div>
+            </div>
+            <div class="col-md-4"></div>
+          </tab>
+        </tabset>
+        <hr>
+        <div class="row">
+          <div class="col-md-6 col-xs-12 text-center">
+            <h4> <a href="https://angular-ui.github.io/bootstrap/">Angular Bootstrap UI</a> has lovely interactive elements... </h4>
           </div>
-          <div class="col-md-4"></div>
-        </tab>
-        <tab heading="CSS">
-          <div class="col-md-4"></div>
-          <div class="col-md-4 text-center">
-            <p> &nbsp; </p>
-            <button class="btn btn-success" ng-click="isCssCollapsed = !isCssCollapsed">The CSS</button>
-            <div collapse="isCssCollapsed">
-              <div class="well well-sm">
-                <h3> View <a href="https://github.com/reelyactive/angular-style-guide/blob/gh-pages/style/main.css">style/main.css</a> on GitHub </h3>
-              </div> 
-	    </div>
+          <div class="col-md-6 col-xs-12 text-center">
+            <h4> ...and they complement the mobile-first <a href="http://getbootstrap.com/css/">Bootstrap CSS</a> so elegantly. </h4>
           </div>
-          <div class="col-md-4"></div>
-        </tab>
-        <tab heading="JS">
-          <div class="col-md-4"></div>
-          <div class="col-md-4 text-center">
-            <p> &nbsp; </p>
-            <button class="btn btn-success" ng-click="isJsCollapsed = !isJsCollapsed">The JS</button>
-            <div collapse="isJsCollapsed">
-              <div class="well well-sm">
-                <h3> View <a href="https://github.com/reelyactive/angular-style-guide/blob/gh-pages/js/template.js">js/template.js</a> on GitHub </h3>
-              </div> 
-	    </div>
-          </div>
-          <div class="col-md-4"></div>
-        </tab>
-      </tabset>
-      <hr>
-      <div class="row">
-        <div class="col-md-6 col-xs-12 text-center">
-          <h4> <a href="https://angular-ui.github.io/bootstrap/">Angular Bootstrap UI</a> has lovely interactive elements... </h4>
         </div>
-        <div class="col-md-6 col-xs-12 text-center">
-          <h4> ...and they complement the mobile-first <a href="http://getbootstrap.com/css/">Bootstrap CSS</a> so elegantly. </h4>
+        <div class="row text-center">
+          <h1> Read our <a href="https://github.com/reelyactive/angular-style-guide">angular-style-guide</a> on GitHub </h1>
         </div>
-      </div>
-      <div class="row text-center">
-        <h1> Read our <a href="https://github.com/reelyactive/angular-style-guide">angular-style-guide</a> on GitHub </h1>
       </div>
       <footer class="footer">
         <a href="https://github.com/reelyactive/projectname"> [project name] </a>
@@ -107,7 +109,7 @@
         <a href="http://context.reelyactive.com"
            tooltip="We believe in an open Internet of Things"
            tooltip-placement="right">
-          &copy; reelyActive 2015
+          &copy; reelyActive 2015-2016
         </a>
       </footer>
     </div>
