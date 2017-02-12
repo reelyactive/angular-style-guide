@@ -1,6 +1,6 @@
 # reelyActive's Angular.js Guide
 
-Here we summarise the best practices, coding standards and tools for all our web development using AngularJS, HTML and CSS.
+Here we summarise the best practices, coding standards and tools for all our web development using AngularJS, HTML and CSS.  Looking for an example of HTML, CSS and JS that embodies this guide?  [Here you go](https://reelyactive.github.io/angular-style-guide/), and [here's the code](https://github.com/reelyactive/angular-style-guide/tree/gh-pages).
 
 
 ## Existing Standards
