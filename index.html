@@ -3,10 +3,10 @@
   <head>
     <title> reelyActive [project name] </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style/reelyactive.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.13.4/ui-bootstrap-tpls.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
     <script type="text/javascript" src="js/template.js"></script>
   </head>
   <body ng-app="appName">
@@ -29,15 +29,19 @@
              ng-click="navCollapsed = true">
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href> Active link </a></li>
-            <li class="dropdown" dropdown on-toggle="toggled(open)">
-              <a href class="dropdown-toggle" dropdown-toggle role="button"
+            <li class="dropdown" uib-dropdown on-toggle="toggled(open)">
+              <a href class="dropdown-toggle" uib-dropdown-toggle role="button"
                  data-toggle="dropdown" aria-haspopup="true"
                  aria-expanded="false">
                 Dropdown <span class="caret"></span>
               </a>
-              <ul class="dropdown-menu">
-                <li><a href ng-click="takeAction(1)">An action</a></li>
-                <li><a href ng-click="takeAction(2)">Another action</a></li>
+              <ul class="dropdown-menu" uib-dropdown-menu role="menu">
+                <li role="menuitem">
+                  <a href ng-click="takeAction(1)">An action</a>
+                </li>
+                <li role="menuitem">
+                  <a href ng-click="takeAction(2)">Another action</a>
+                </li>
               </ul>
             </li>
             <li>
@@ -49,47 +53,47 @@
         </div>
       </nav>
       <div class="container-fluid">
-        <tabset class="row">
-          <tab heading="HTML">
+        <uib-tabset class="row">
+          <uib-tab heading="HTML">
             <div class="col-md-4"></div>
             <div class="col-md-4 text-center">
               <p> &nbsp; </p>
               <button class="btn btn-success" ng-click="isHtmlCollapsed = !isHtmlCollapsed">The HTML</button>
-              <div collapse="isHtmlCollapsed">
+              <div uib-collapse="isHtmlCollapsed">
                 <div class="well well-sm">
                   <h3> View <a href="https://github.com/reelyactive/angular-style-guide/blob/gh-pages/index.html">index.html</a> on GitHub </h3>
                 </div> 
 	            </div>
             </div>
             <div class="col-md-4"></div>
-          </tab>
-          <tab heading="CSS">
+          </uib-tab>
+          <uib-tab heading="CSS">
             <div class="col-md-4"></div>
             <div class="col-md-4 text-center">
               <p> &nbsp; </p>
               <button class="btn btn-success" ng-click="isCssCollapsed = !isCssCollapsed">The CSS</button>
-              <div collapse="isCssCollapsed">
+              <div uib-collapse="isCssCollapsed">
                 <div class="well well-sm">
                   <h3> View <a href="https://github.com/reelyactive/angular-style-guide/blob/gh-pages/style/reelyactive.css">style/reelyactive.css</a> on GitHub </h3>
                 </div> 
 	            </div>
             </div>
             <div class="col-md-4"></div>
-          </tab>
-          <tab heading="JS">
+          </uib-tab>
+          <uib-tab heading="JS">
             <div class="col-md-4"></div>
             <div class="col-md-4 text-center">
               <p> &nbsp; </p>
               <button class="btn btn-success" ng-click="isJsCollapsed = !isJsCollapsed">The JS</button>
-              <div collapse="isJsCollapsed">
+              <div uib-collapse="isJsCollapsed">
                 <div class="well well-sm">
                   <h3> View <a href="https://github.com/reelyactive/angular-style-guide/blob/gh-pages/js/template.js">js/template.js</a> on GitHub </h3>
                 </div> 
 	            </div>
             </div>
             <div class="col-md-4"></div>
-          </tab>
-        </tabset>
+          </uib-tab>
+        </uib-tabset>
         <hr>
         <div class="row">
           <div class="col-md-6 col-xs-12 text-center">
@@ -107,9 +111,9 @@
         <a href="https://github.com/reelyactive/projectname"> [project name] </a>
         &nbsp; | &nbsp;
         <a href="http://context.reelyactive.com"
-           tooltip="We believe in an open Internet of Things"
+           uib-tooltip="We believe in an open Internet of Things"
            tooltip-placement="right">
-          &copy; reelyActive 2015-2016
+          &copy; reelyActive 2015-2017
         </a>
       </footer>
     </div>
