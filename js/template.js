@@ -13,13 +13,12 @@ angular.module('appName', [ 'ui.bootstrap' ])
 
     function doSomethingRESTful() {
       $http.defaults.headers.common.Accept = 'application/json';
-      $http.get(url)
-        .success(function(data, status, headers, config) {
+      $http({ method: 'GET', url: url })
+        .then(function(response) { // Success
           console.log('Example of a successful HTTP GET');
-        })
-        .error(function(data, status, headers, config) {
+        }, function(response) {    // Error
           console.log('Example of an unsuccessful HTTP GET');
-        });
+      });
     }
 
     $scope.intervalPromise = $interval(doSomethingRESTful, 1000);
